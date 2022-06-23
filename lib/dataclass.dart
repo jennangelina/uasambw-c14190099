@@ -20,4 +20,14 @@ class cBerita {
         cDescription: json["description"],
         cThumbnail: json["thumbnail"]);
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      "link": cLink,
+      "title": cTitle,
+      "pubDate": cPubDate,
+      "description": cDescription,
+      "thumbnail": cThumbnail
+    };
+  }
 }
